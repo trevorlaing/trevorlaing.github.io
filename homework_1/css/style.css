@@ -2,6 +2,9 @@ body {
     font-family: 'Comic','Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     font-size: 115%;
 }
+main {
+    background-color: #ffee00;
+}
 /*--- I coded from bottom to top the second time around it worked for me.---*/
 /*--- Looks perfect in Firefox ---*/
 h1 {
@@ -9,12 +12,9 @@ h1 {
     color: #0a138f;
     text-align: center;
 }
-main {
-    background-color: #ffee00;
-}
 header {
     background-color: #f0f0f0;
-    width: 90%;
+    width: 100%;
     height: auto;
     
 }
@@ -30,13 +30,13 @@ li {
     width:auto;
 }
 div {
-    width: 90%;
+    width: 100%;
     background-color: #ffee00;
 }
 
 footer {
     background-color: #ecece6;
-    width: 90%;
+    width: 100%;
 }
 p {
     line-height: auto;
