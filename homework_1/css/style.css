@@ -9,6 +9,9 @@ h1 {
     color: #0a138f;
     text-align: center;
 }
+main {
+    background-color: #ffee00;
+}
 header {
     background-color: #f0f0f0;
     width: 90%;
