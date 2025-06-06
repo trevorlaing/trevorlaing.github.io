@@ -4,6 +4,7 @@ body {
 }
 main {
     background-color: #ffee00;
+    font-size: 100%;
 }
 /*--- I coded from bottom to top the second time around it worked for me.---*/
 /*--- Looks perfect in Firefox ---*/
