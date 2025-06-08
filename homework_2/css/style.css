@@ -47,7 +47,11 @@ li {
 */
 .grid-container {
   display: grid;
-  grid-template-columns: auto auto auto auto auto;
+  grid-template-columns: auto auto;
+}
+.flex-container {
+  display: flex;
+  justify-content: space-between;
 }
 div {
     width: 100%;
