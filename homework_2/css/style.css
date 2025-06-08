@@ -33,6 +33,7 @@ nav img {
     top: 20px;
     float: right;
 }
+/*--- using ul instead of li ----*/
 ul {
     display: flex;
     justify-content: space-around;
@@ -42,7 +43,7 @@ ul {
     margin: 0;
     clear: both; 
 }
-/*
+/*--- professor says comment out li ----
 li {
     
     padding: 10px;
@@ -53,19 +54,25 @@ li {
   display: grid;
   grid-template-columns: auto auto;
 }
+.grid-container>img {
+    width: 80%;
+    height: auto;
+    padding: 10px;
+}
 .flex-container {
   display: flex;
-  justify-content: space-between;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  width: 100%;
+}
+.flex-container>img {
+    width: 18%;
+    height: auto;
+    padding: .1%;
 }
 div {
     width: 100%;
     background-color: rgb(42, 56, 165);
-}
-
-div>img {
-    width: 80%;
-    height: auto;
-    padding: 10px;
 }
 
 footer {
