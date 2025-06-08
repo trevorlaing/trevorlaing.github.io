@@ -1,4 +1,5 @@
 body {
+    background-color: rgb(229, 229, 140);
     font-family: 'Comic','Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     font-size: 115%;
 }
@@ -20,19 +21,43 @@ header {
     
 }
 nav {
-    background-color: #c8e1f5;
-    width: 100%;
-    height: auto;
-    
-}
-li {
     display: inline-block;
+    width: 80%;
+    height: auto;
+       
+}
+nav img {
+    width: 10%;
+    height: auto;
+    position: relative;  
+    top: 20px;
+    float: right;
+}
+ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;    
+}
+/*
+li {
+    
     padding: 10px;
     width:auto;
 }
+*/
+.grid-container {
+  display: grid;
+  grid-template-columns: auto auto auto auto auto;
+}
 div {
     width: 100%;
-    background-color: #ffee00;
+    background-color: rgb(42, 56, 165);
+}
+
+div>img {
+    width: 80%;
+    height: auto;
+    padding: 10px;
 }
 
 footer {
