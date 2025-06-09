@@ -25,7 +25,7 @@ nav {
     height: auto;
 }
 nav img {
-    width: 10%;
+    width: 10%; /*--- I think I can use pixels instead of percentages, but that's not the assignment ---*/
     height: auto;
     position: relative;  
     margin-top: 0%; /*--- the image kept bleading into the link list so I set the margin to zero ---*/   
@@ -75,7 +75,7 @@ li {
 }
 /*--- I used flexbox for the images ---*/
 .flex-container>img {
-    width: 200px;
+    width: 175px; /*--- I used pixels for the width of the images to get close to example---*/
     height: auto;
 }
 
