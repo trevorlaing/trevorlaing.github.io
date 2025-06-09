@@ -38,7 +38,6 @@ ul {
     align-items: center;
     list-style-type: none;
     clear: both; /*--- I used clear: both to clear the float from the image ---*/   
-   
 }
 /*--- professor says comment out li ----
 li {
@@ -71,12 +70,10 @@ li {
     width: 175px; /*--- I used pixels for the width of the images to get close to example---*/
     height: auto;
 }
-
 div {
     width: 100%;
     background-color: rgb(42, 56, 165);
 }
-
 footer {
     background-color: #B2BEB5;
     width: 100%;
