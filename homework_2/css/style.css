@@ -1,7 +1,7 @@
 body {
     background-color: rgb(229, 229, 140);
     font-family: 'Comic','Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    font-size: 115%;
+    font-size: 150%;
 }
 main {
     background-color: #ffee00;
@@ -24,14 +24,17 @@ nav {
     display: inline-block;
     width: 80%;
     height: auto;
+   
        
 }
 nav img {
     width: 10%;
     height: auto;
     position: relative;  
-    top: 20px;
+    margin-top: 0%; /*--- the image kept bleading into the link list so I set the margin to zero ---*/   
     float: right;
+    
+    
 }
 /*--- using ul instead of li ----*/
 ul {
@@ -39,9 +42,8 @@ ul {
     justify-content: space-around;
     align-items: center;
     list-style-type: none;
-    padding: 0;
-    margin: 0;
-    clear: both; 
+    clear: both; /*--- I used clear: both to clear the float from the image ---*/   
+   
 }
 /*--- professor says comment out li ----
 li {
@@ -53,23 +55,27 @@ li {
 .grid-container {
   display: grid;
   grid-template-columns: auto auto;
-}
+  justify-content: space-evenly;
+  row-gap: 20px;
+  align-items: center;
+ }
+/*--- I used grid for the images ---*/
 .grid-container>img {
     width: 80%;
     height: auto;
-    padding: 10px;
 }
 .flex-container {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-evenly;
+  justify-content: space-between;
   width: 100%;
 }
+/*--- I used flexbox for the images ---*/
 .flex-container>img {
-    width: 18%;
+    width: 10%;
     height: auto;
-    padding: .1%;
 }
+
 div {
     width: 100%;
     background-color: rgb(42, 56, 165);
