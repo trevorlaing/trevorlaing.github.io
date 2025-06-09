@@ -61,11 +61,13 @@ li {
   justify-content: space-evenly;
   row-gap: 20px;
   align-items: center;
+  
  }
 /*--- I used grid for the images ---*/
 .grid-container>img {
     width: 80%;
     height: auto;
+    margin-left: 80px;
 }
 .flex-container {
   display: flex;
