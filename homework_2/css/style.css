@@ -49,25 +49,16 @@ li {
 */
 .grid-container {
   display: grid;
-  grid-template-columns: auto auto;
+  grid-template-columns: 40% 40%;
   justify-content: space-evenly;
-  row-gap: 20px;
+  row-gap: 40px;
   align-items: center;
- }
-/*--- I used grid for the images ---*/
-.grid-container {
-  display: grid;
-  grid-template-columns: auto auto;
-  justify-content: space-evenly;
-  row-gap: 20px;
-  align-items: center;
-  
  }
 /*--- I used grid for the images ---*/
 .grid-container>img {
-    width: 80%;
+    width: 100%;
     height: auto;
-    margin-left: 80px;
+    margin-left: 8px;
 }
 .flex-container {
   display: flex;
