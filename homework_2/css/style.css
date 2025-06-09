@@ -7,7 +7,7 @@ main {
     background-color: #ffee00;
     font-size: 100%;
 }
-/*--- I coded from bottom to top the second time around it worked for me.---*/
+/*--- I coded from bottom to top the second time around it worked for me. "no ids"---*/
 /*--- Looks perfect in Firefox ---*/
 h1 {
     font-family: 'Comic Sans MS', cursive, sans-serif;
@@ -18,14 +18,11 @@ header {
     background-color: #B2BEB5;
     width: 100%;
     height: auto;
-    
-}
+ }
 nav {
     display: inline-block;
     width: 80%;
     height: auto;
-   
-       
 }
 nav img {
     width: 10%;
@@ -33,13 +30,11 @@ nav img {
     position: relative;  
     margin-top: 0%; /*--- the image kept bleading into the link list so I set the margin to zero ---*/   
     float: right;
-    
-    
 }
 /*--- using ul instead of li ----*/
 ul {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-evenly;
     align-items: center;
     list-style-type: none;
     clear: both; /*--- I used clear: both to clear the float from the image ---*/   
@@ -60,6 +55,14 @@ li {
   align-items: center;
  }
 /*--- I used grid for the images ---*/
+.grid-container {
+  display: grid;
+  grid-template-columns: auto auto;
+  justify-content: space-evenly;
+  row-gap: 20px;
+  align-items: center;
+ }
+/*--- I used grid for the images ---*/
 .grid-container>img {
     width: 80%;
     height: auto;
@@ -67,12 +70,12 @@ li {
 .flex-container {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;
+  justify-content: space-evenly;
   width: 100%;
 }
 /*--- I used flexbox for the images ---*/
 .flex-container>img {
-    width: 10%;
+    width: 200px;
     height: auto;
 }
 
