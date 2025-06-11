@@ -4,7 +4,10 @@ body {
   background-color: rgb(163, 18, 18);
   font-family: 'Comic Relief', sans-serif;
 }
-h2 {
+div h2 {
+  color:#fff;
+}
+li h2 {
   color: rgb(56, 55, 55);
 }
 /** HEADER **/
