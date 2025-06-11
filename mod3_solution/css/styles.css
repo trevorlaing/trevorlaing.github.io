@@ -4,18 +4,18 @@ body {
   background-color: rgb(163, 18, 18);
   font-family: 'Comic Relief', sans-serif;
 }
-
 /** HEADER **/
 #header-nav {
   background-color: #f6b319;
   border-radius: 0;
   border: 0;
 }
-
 .navbar-brand {
   padding-top: 25px;
+  display: flex;
+  float: left;
+  height: auto;
 }
-
 .navbar-brand h1 { /* Restaurant name */
   font-family: 'Comic Relief', serif;
   color: gray;
@@ -30,36 +30,30 @@ body {
 .navbar-brand a:hover, .navbar-brand a:focus {
   text-decoration: none;
 }
-.navbar-brand p { /* Kosher cert */
-  color: #000;
-  text-transform: uppercase;
-  font-size: .7em;
-  margin-top: 15px;
-}
-.navbar-brand p span { /* Star-K */
-  vertical-align: middle;
-}
-
+/* Navigation */
 #nav-list {
   margin-top: 10px;
+  
 }
 #nav-list a {
   color: #951C49;
   text-align: center;
-}
+  font-size: 1.8em;
+  
 #nav-list a:hover {
   background: #E7E7E7;
 }
-#nav-list a span {
-  font-size: 1.8em;
-}
 .navbar-header button.navbar-toggle, .navbar-header .icon-bar {
   border: 1px solid #61122f;
+  
 }
 .navbar-header button.navbar-toggle {
   clear: both;
   margin-top: -30px;
+  
 }
+}
+
 /* END HEADER */
 /* Section */
 section {
@@ -73,4 +67,19 @@ section {
 section a {
   color: yellow;
   text-decoration: none;
+}
+/********** Extra small devices only **********/
+@media (max-width: 767px) {
+  /* Header */
+  .navbar-brand {
+    padding-top: 10px;
+    height: 80px;
+    }
+  .navbar-brand h1 { /* Restaurant name */
+    padding-top: 10px;
+    font-size: 5vw; /* 1vw = 1% of viewport width */    
+    }
+   #collapsable-nav a { /* Collapsed nav menu text */
+    font-size: 1.2em;
+    }
 }
