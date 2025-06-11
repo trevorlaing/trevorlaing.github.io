@@ -26,6 +26,7 @@ body {
   margin-top: 0;
   margin-bottom: 0;
   line-height: .75;
+    display: inline-block;
 }
 .navbar-brand a:hover, .navbar-brand a:focus {
   text-decoration: none;
@@ -67,8 +68,7 @@ section {
   color: white;
   background-color: rgb(18, 18, 77);
   margin: 20px auto;
-
-  
+  width: 90%;
 }
 /* Section links */
 section a {
