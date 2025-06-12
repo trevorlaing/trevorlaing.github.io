@@ -19,29 +19,30 @@ header {
     width: 100%;
     height: auto;
  }
- header div {
-    background-image: url('images/BaconGallupPark.jpg');
-    background-size: cover;
-    background-position: center;
+ #header-image {
+    background-image: url('../images/freeparkimage.jpg');
     width: 100%;
-    height: auto;
+    height: 400px; /* Give the div a height so the background is visible */
+    background-repeat: no-repeat;
+    background-size: cover; /* Make the image cover the entire div */
+    background-position: center center; /* Center the image */
+    color: white; /* Text color for contrast */
+    text-align: center;
     display: flex;
-    justify-content: space-between; /*--- I used space-between to align the image and nav ---*/
-    align-items: center; /*--- I used align-items to center the image and nav vertically ---*/
- }
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    box-sizing: border-box; /* Include padding in the height calculation */
+}
+
 nav {
     display: inline-block;
     width: 80%;
     height: auto;
+    
 }
-nav img {
-    width: 10%; /*--- I think I can use pixels instead of percentages, but that's not the assignment ---*/
-    height: auto;
-    position: relative;  
-    margin-top: 0%; /*--- the image kept bleading into the link list so I set the margin to zero ---*/   
-    float: right;
-}
-/*--- using ul instead of li ----*/
+-- using ul instead of li ----*/
 ul {
     display: flex;
     justify-content: space-evenly;
@@ -95,6 +96,15 @@ li {
     border: 3px solid #040404; /*--- I used a border to match the example ---*/
     margin: 10px; /*--- I used margin to space the images ---*/
     box-shadow: 0 4px 8px rgba(0,0,0,0.2); /*--- I added a box shadow for a better look ---*/
+    transition: transform 0.2s; /*--- I added a transition for the hover effect ---*/
+    opacity: 0.9; /*--- I used opacity to make the images slightly transparent ---*/
+    filter: grayscale(80%); /*--- I used a filter to make the images slightly gray ---*/
+}
+.flex-container>img:hover { /*---trying to spice up the images with hover effects---*/
+    transform: scale(2.5); /*--- I used a hover effect to scale the image ---*/
+    opacity: 1; /*--- I used opacity to make the image fully opaque on hover ---*/
+    filter: grayscale(0%); /*--- I used a filter to remove the gray on hover ---*/
+    border-radius: 10px; /*--- I used a border radius to match the example ---*/
 }
 .flex-container>img:nth-child(even) {
     
