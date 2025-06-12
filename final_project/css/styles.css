@@ -1,6 +1,6 @@
 body {
     background-color: rgb(229, 229, 140);
-    font-family: 'Comic','Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-family: 'Comic Relief','Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     font-size: 150%;
 }
 main {
@@ -10,7 +10,7 @@ main {
 /*--- I coded from bottom to top the second time around it worked for me. "no ids"---*/
 /*--- Looks perfect in Firefox ---*/
 h1 {
-    font-family: 'Comic Sans MS', cursive, sans-serif;
+    font-family: 'Great Vibes', cursive, sans-serif;
     color: #0a138f;
     text-align: center;
 }
@@ -18,6 +18,16 @@ header {
     background-color: #B2BEB5;
     width: 100%;
     height: auto;
+ }
+ header div {
+    background-image: url('images/BaconGallupPark.jpg');
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: space-between; /*--- I used space-between to align the image and nav ---*/
+    align-items: center; /*--- I used align-items to center the image and nav vertically ---*/
  }
 nav {
     display: inline-block;
@@ -50,14 +60,26 @@ li {
   display: grid;
   grid-template-columns: 40% 40%;
   justify-content: space-evenly;
-  row-gap: 40px;
+  row-gap: 20px;
   align-items: center;
  }
 /*--- I used grid for the images ---*/
 .grid-container>img {
     width: 100%;
     height: auto;
-    margin-left: 8px;
+    margin: 8px;
+    border: 1px solid #040404; /*--- I used a border to match the example ---*/
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2); /*--- I added a box shadow for a better look ---*/
+    border-radius: 5px; /*--- I used a border radius to match the example ---*/
+    transition: transform 0.2s; /*--- I added a transition for the hover effect ---*/
+    opacity: 0.9; /*--- I used opacity to make the images slightly transparent ---*/
+    filter: grayscale(50%); /*--- I used a filter to make the images slightly gray ---*/
+}
+.grid-container>img:hover {
+    transform: scale(1.05); /*--- I used a hover effect to scale the image ---*/
+    opacity: 1; /*--- I used opacity to make the image fully opaque on hover ---*/
+    filter: grayscale(0%); /*--- I used a filter to remove the gray on hover ---*/
+    border-radius: 10px; /*--- I used a border radius to match the example ---*/
 }
 .flex-container {
   display: flex;
@@ -67,8 +89,20 @@ li {
 }
 /*--- I used flexbox for the images ---*/
 .flex-container>img {
-    width: 175px; /*--- I used pixels for the width of the images to get close to example---*/
+    /*--- I used nth-child to style the even images differently ---*/
+    width: 100px; /*--- I used pixels for the width of the images to get close to example---*/
     height: auto;
+    border: 3px solid #040404; /*--- I used a border to match the example ---*/
+    margin: 10px; /*--- I used margin to space the images ---*/
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2); /*--- I added a box shadow for a better look ---*/
+}
+.flex-container>img:nth-child(even) {
+    
+    border-radius: 5px; /*--- I used a border radius to match the example ---*/
+}
+.flex-container>img:nth-child(odd) {
+    
+    border-radius: 100%; /*--- I used a border radius to match the example ---*/
 }
 div {
     width: 100%;
@@ -81,3 +115,15 @@ footer {
 p {
     line-height: auto;
 }
+.offpage {
+    text-decoration: none;
+    color: #0a138f;
+    font-weight: bold;
+    font-size: .625em;
+    position: relative; /*--- I used position relative to move the link back on the page ---*/
+    opacity: 0;
+}
+.offpage:hover,.offpage:focus{
+    opacity: 1; /*--- I used left to move the link back on the page when hovered ---*/
+}
+/*--- I used a hover effect to move the link back on the page when hovered ---*/
