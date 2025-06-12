@@ -164,7 +164,7 @@ p {
     position: relative; /*--- I used position relative to move the link back on the page ---*/
     opacity: 0;
 }
-.offpage:hover,.offpage:focus{
+.offpage:focus{
     opacity: 1; /*--- I used left to move the link back on the page when hovered ---*/
 }
 /*--- I used a hover effect to move the link back on the page when hovered ---*/
