@@ -100,7 +100,8 @@ li>a:hover {
     width: 100%;
     height: auto;
     margin: 8px;
-    border: 1px solid #040404; /*--- I used a border to match the example ---*/
+    padding: 3px; /*--- I used padding to space the images ---*/
+    border: 3px solid #040404; /*--- I used a border to match the example ---*/
     box-shadow: 0 4px 8px rgba(0,0,0,0.2); /*--- I added a box shadow for a better look ---*/
     border-radius: 5px; /*--- I used a border radius to match the example ---*/
     transition: transform 0.2s; /*--- I added a transition for the hover effect ---*/
@@ -124,6 +125,7 @@ li>a:hover {
     /*--- I used nth-child to style the even images differently ---*/
     width: 100px; /*--- I used pixels for the width of the images to get close to example---*/
     height: auto;
+    padding: 1px; /*--- I used padding to space the images ---*/
     border: 3px solid #040404; /*--- I used a border to match the example ---*/
     margin: 10px; /*--- I used margin to space the images ---*/
     box-shadow: 0 4px 8px rgba(0,0,0,0.2); /*--- I added a box shadow for a better look ---*/
