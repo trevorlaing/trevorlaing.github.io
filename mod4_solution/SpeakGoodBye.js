@@ -1,6 +1,6 @@
 
 
-
+/*-- what i learned from speakhello.js --*/
 var speakWord = "Good Bye";
 
 (function(window) {
