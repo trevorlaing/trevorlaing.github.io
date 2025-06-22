@@ -80,7 +80,7 @@ img{
 /* Reduced motion styles */
 @media (prefers-reduced-motion:reduce) {
     body {
-        scroll-behavior: none;
+        scroll-behavior: auto;
     }
 }
 
