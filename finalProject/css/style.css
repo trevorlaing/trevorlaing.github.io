@@ -79,7 +79,7 @@ img{
 }
 /* Reduced motion styles */
 @media (prefers-reduced-motion:reduce) {
-    body {
+    html {
         scroll-behavior: auto;
     }
 }
